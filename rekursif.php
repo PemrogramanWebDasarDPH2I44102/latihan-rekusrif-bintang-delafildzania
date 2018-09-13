@@ -1,10 +1,14 @@
 <?php
 
-function rekursif($i){
-  echo "$i <br>";
-  $i--;
-  if($i>0)
-    rekursif($i);
+function rekursif ($batas){
+	echo "<pre>";
+	for ($i=1;$i<=$batas;$i++){
+     for ($j=$batas;$j>=$i;$j--){
+    echo "*";
+      }
+     echo "<br>";
+}
+	echo "</pre>";
 }
 rekursif(5);
 ?>
